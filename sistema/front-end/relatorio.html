@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Aluno - Fúria Fitness</title>
+    <link rel="stylesheet" href="style.css"> <!-- Verifique o caminho do CSS -->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>FÚRIA FITNESS</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="relatorio.html">Relatório</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Relatório de Aluno</h2>
+        <div class="container">
+            <form id="relatorio-aluno">
+                <fieldset>
+                    <legend>Informe o seu CPF:</legend>
+
+                    <label for="cpf">CPF do aluno:</label>
+                    <input type="text" id="cpf" name="cpf" required>
+
+                    <button type="submit">Gerar Relatório</button>
+                    
+                </fieldset>
+            </form>
+
+            <!-- Área onde o relatório será exibido -->
+            <div id="resultado-relatorio" style="display: none;">
+                <h3>Relatório do Aluno</h3>
+                <p><strong>Nome:</strong> <span id="nome-relatorio"></span></p>
+                <p><strong>Data de Nascimento:</strong> <span id="data-nasc-relatorio"></span></p>
+                <p><strong>Telefone:</strong> <span id="telefone-relatorio"></span></p>
+                <p><strong>Email:</strong> <span id="email-relatorio"></span></p>
+                <p><strong>Gênero:</strong> <span id="genero-relatorio"></span></p>
+                <p><strong>Peso:</strong> <span id="peso-relatorio"></span></p>
+                <p><strong>Altura:</strong> <span id="altura-relatorio"></span></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Botão Gerente, agora mais para baixo perto do rodapé -->
+    <div class="gerente-btn-bottom">
+        <a href="gerente.html" class="botao-gerente">Gerente</a>
+        
+    </div>
+
+    <footer>
+        <p>Contato: Telefone: (XX) XXXX-XXXX | E-mail: contato@xxx.com</p>
+        <p>Instagram: @furiafitness | Facebook: Fúria Fitness</p>
+    </footer>
+
+    <script src="/sistema/front-end/public/js/relatorio.js"></script> <!-- Link para o script JavaScript -->
+</body>
+</html>
